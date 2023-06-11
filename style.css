@@ -15,7 +15,7 @@ body{
     width: 100vw;
     height: 100vh;
     /* background: linear-gradient(to top left, #3ed8ff,#a8f5ff); */
-    background-image: url(https://images4.alphacoders.com/131/1316515.jpeg);
+    background-image: url(ds_background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -42,8 +42,8 @@ body{
 }
 
 .signup-header p{
-    font-size: 0.9rem;
-    color: #555;
+    font-size: 1rem;
+    color: #8b0808;
     text-align: center;
 }
 
@@ -108,3 +108,13 @@ body{
     right:50px;
 }
 
+button{
+    position:absolute;
+    left:97%;
+    top:0;
+    cursor: pointer;
+    border:2px solid red;
+    border-radius: 50%;
+    
+
+}
