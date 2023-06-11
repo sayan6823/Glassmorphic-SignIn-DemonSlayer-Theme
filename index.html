@@ -6,13 +6,13 @@
     <title>Signup-Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     
     <div class="outer-box">
         <div class="inner-box">
             <header class="signup-header">
                 <h1>Signup</h1>
-                <p>It just takes 30 seconds</p>
+                <p>Click anywhere on the screen for a surprise</p>
             </header>
             <main class="signup-body">
                 <form action="#">
@@ -47,15 +47,16 @@
         </div>
         <!-- <div class="circle c1"></div>
         <div class="circle c2"></div> -->
-            
+       
     </div>
-    
-    
     <script>
-        
+        var obj=document.getElementById("body");
         const audio = new Audio();
         audio.src = "ringtone.mp3";
-        document.onplay=audio.play();
+        // document.oninput=audio.play();
+       obj.addEventListener('click',function(){
+        audio.play();
+       })
         
     </script>
 
